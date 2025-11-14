@@ -47,12 +47,28 @@ export interface ContactInfo {
   linkedin: string;
   location: string;
 }
+export interface Project {
+  id: string;
+  title: string;
+  description: {
+    fr: string;
+    en: string;
+  };
+  image: string;
+  technologies: string[];
+  github?: string;
+  demo?: string;
+  category: "web" | "mobile" | "fullstack" | "backend" | "frontend";
+  featured: boolean;
+  date: string;
+}
 
 export interface Translations {
   nav: {
     home: string;
     about: string;
     experience: string;
+    projects: string;
     education: string;
     skills: string;
     contact: string;
@@ -87,6 +103,23 @@ export interface Translations {
     topSkills: string;
     certifications: string;
     languages: string;
+  };
+  projects: {
+    title: string;
+    viewAll: string;
+    featured: string;
+    technologies: string;
+    viewProject: string;
+    noDemo: string;
+    viewCode: string;
+    categories: {
+      all: string;
+      web: string;
+      mobile: string;
+      fullstack: string;
+      backend: string;
+      frontend: string;
+    };
   };
   contact: {
     title: string;

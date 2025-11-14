@@ -11,6 +11,7 @@ export const useActiveSection = () => {
         "home",
         "about",
         "experience",
+        "projects",
         "education",
         "skills",
         "contact",
